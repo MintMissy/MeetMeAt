@@ -1,0 +1,66 @@
+<div class="p-4">
+	<div class="mb-4">
+		<a routerLink="/" class="p-button-outlined group">
+			<i
+				class="pi pi-arrow-left mr-2 block text-gray-400 group-hover:text-white"
+			></i>
+			<span class="text-gray-400 group-hover:text-white"
+				>View Other Events</span
+			>
+		</a>
+	</div>
+
+	@if (meetup.isLoading()) {
+		<div class="items-cener flex justify-center">
+			<p-progressSpinner />
+		</div>
+	} @else if (meetup.error()) {
+		@if (meetup.statusCode() === 404) {
+			<div class="flex flex-col items-center justify-center gap-4">
+				<i class="pi pi-info-circle text-4xl text-blue-500"></i>
+				<p class="text-lg text-gray-700">Meetup not found</p>
+				<p-button label="Go Back" icon="pi pi-arrow-left" routerLink="/" />
+			</div>
+		} @else {
+			<div class="flex flex-col items-center justify-center gap-4 p-8">
+				<i class="pi pi-exclamation-circle text-4xl text-red-500"></i>
+				<p class="text-lg text-gray-700">Error loading meetup details</p>
+
+				<div class="flex gap-4">
+					<p-button label="Try Again" icon="pi pi-refresh" />
+					<a routerLink="/" class="p-button font-bold"> Go Back </a>
+				</div>
+			</div>
+		}
+	} @else if (meetup.value()) {
+		<div class="container">
+			<app-meetup-header
+				(edit)="editDialogOpen.set(true)"
+				(delete)="onDelete($event)"
+				[title]="meetup.value()?.title"
+				[id]="meetup.value()?.id"
+			/>
+
+			<div class="grid gap-6 md:grid-cols-2">
+				<div class="space-y-6">
+					<app-meetup-details
+						[category]="meetup.value()?.category"
+						[date]="meetup.value()?.date"
+						[city]="meetup.value()?.city"
+						[meetupLocation]="meetup.value()?.meetupLocation"
+						[organizer]="meetup.value()?.organizer"
+					/>
+					<app-meetup-description [description]="meetup.value()?.description" />
+				</div>
+			</div>
+		</div>
+	}
+
+	<app-meetup-dialog
+		(close)="editDialogOpen.set(false)"
+		(editMeetup)="refreshMeetup()"
+		[meetup]="meetup.value()"
+		[open]="editDialogOpen()"
+	/>
+	<p-confirmdialog />
+</div>

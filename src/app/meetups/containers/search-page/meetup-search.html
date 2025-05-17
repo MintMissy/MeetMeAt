@@ -1,0 +1,31 @@
+<div class="p-4">
+	<div class="mb-4 flex justify-between">
+		<h1 class="text-4xl font-bold text-pink-400">MeetMeAt</h1>
+		<p-button (onClick)="addDialogOpen.set(true)" label="Add Meetup" />
+	</div>
+
+	@if (meetups.error()) {
+		<p>Error loading meetups</p>
+	}
+
+	<div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+		@if (meetups.isLoading()) {
+			@for (_ of [0, 1, 2]; track $index) {
+				<app-meetup-card-loader />
+			}
+		} @else {
+			@for (meetup of meetups.value(); track meetup.id) {
+				<app-meetup-card [meetup]="meetup" />
+			}
+		}
+	</div>
+
+	@if (meetups.value().length === 0 && !meetups.isLoading()) {
+		<p>No meetups found</p>
+	}
+
+	<app-meetup-dialog
+		(close)="addDialogOpen.set(false)"
+		[open]="addDialogOpen()"
+	/>
+</div>

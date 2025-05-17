@@ -1,59 +1,48 @@
-# MeetMeAt
+## MEET ME AT - PRZEGLĄD PROJEKTU
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
+Aplikacja webowa, która umożliwia organizatorom tworzenie i zarządzanie wydarzeniami kulturalnymi (koncerty, wystawy, festiwale, meetupy). Użytkownicy (uczestnicy) mogą przeglądać listę wydarzeń, deklarować udział w wydarzeniu i dodawać komentarze. Aplikacja ma na celu marketing wydarzeń dla ich organizatorów oraz zawarcie wszystkich wydarzeń z okolicy dla użytkowników końcowych aplikacji.
 
-## Development server
+## TECH STACK
 
-To start a local development server, run:
+- Angular wersja 19 (https://angular.dev/)
+- Biblioteka Angular Prime NG (https://taiga-ui.dev)
+- Angular ngxtension (https://ngxtension.netlify.app/)
+- RxJs (https://rxjs.dev/api)
+- Tailwind CSS (https://tailwindcss.com/docs/installation/using-vite)
+- PHP z frameworkiem Laravel
+- PostgreSQL
 
-```bash
-ng serve
-```
+## Argumenty za wyborem technologii web:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Uniwersalny dostęp: Aplikacja dostępna z dowolnego urządzenia (komputer, tablet, smartfon).
+- Łatwa integracja: Możliwość integracji z systemami płatności online oraz mediami społecznościowymi.
+- Aktualizacja treści: Szybkie wdrażanie aktualizacji i zmian w ofercie wydarzeń.
+- Skalowalność: Możliwość obsługi rosnącej liczby użytkowników przy relatywnie niskich kosztach utrzymania.
 
-## Code scaffolding
+## Wymagania Funkcjonalne
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Wyszukiwarka meetupów umożliwiająca łatwe odnajdywanie wydarzeń.
+- Strona z szczegółowymi informacjami o meetupu.
+- Możliwość tworzenia oraz edytowania meetupów.
+- Opcja usuwania meetupów bezpośrednio ze strony z detalami.
 
-```bash
-ng generate component component-name
-```
+## Wymagania Pozafunkcyjne
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Strona powinna wykorzystywać kolorystykę marki, z #34D399 jako kolorem głównym oraz motywem ciemnym.
+- Strona powinna być responsywna, dostosowując się do różnych rozmiarów ekranów.
+- Strona powinna być zoptymalizowana pod kątem wydajności, zapewniając szybkie ładowanie i płynne działanie.
 
-```bash
-ng generate --help
-```
+## Odbiorcy Systemu
 
-## Building
+- Organizatorzy wydarzeń kulturalnych, którzy chcą tworzyć i zarządzać swoimi wydarzeniami.
+- Uczestnicy, którzy chcą przeglądać, uczestniczyć i komentować wydarzenia.
 
-To build the project run:
+## Potencjalne Korzyści Biznesowe
 
-```bash
-ng build
-```
+- **Zwiększenie Zasięgu i Widoczności Wydarzeń**: Dzięki aplikacji organizatorzy mogą dotrzeć do szerszej publiczności, co zwiększa frekwencję na wydarzeniach i potencjalnie generuje większe przychody z biletów oraz sprzedaży na miejscu.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- **Optymalizacja Procesów Organizacyjnych**: Aplikacja umożliwia organizatorom łatwe zarządzanie wydarzeniami, co redukuje czas i koszty związane z organizacją. Automatyzacja procesów, takich jak rejestracja uczestników czy zarządzanie płatnościami, pozwala skupić się na innych aspektach biznesu.
 
-## Running unit tests
+- **Budowanie Społeczności i Zaangażowania**: Użytkownicy mogą nie tylko uczestniczyć w wydarzeniach, ale także komentować i dzielić się swoimi doświadczeniami, co sprzyja budowaniu lojalnej społeczności wokół marki organizatora.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- **Dane i Analizy**: Aplikacja może zbierać dane o uczestnikach i ich preferencjach, co pozwala na lepsze dostosowanie oferty do potrzeb rynku oraz podejmowanie bardziej świadomych decyzji biznesowych.

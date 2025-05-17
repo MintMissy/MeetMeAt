@@ -1,0 +1,44 @@
+{
+	"meetups": [
+		{
+			"id": 1,
+			"title": "Angular 19 Deep Dive",
+			"description": "Explore the latest features of Angular 19 including signals, deferrable views, and more.",
+			"date": "2024-07-15T18:00:00",
+			"organizer": "Angular Community Poland",
+			"city": "Warsaw",
+			"meetupLocation": "Google Campus Warsaw",
+			"category": "programming"
+		},
+		{
+			"id": 2,
+			"title": "Jazz in the Park",
+			"description": "An evening of smooth jazz under the stars. Bring your own blanket and refreshments.",
+			"date": "2024-07-20T19:30:00",
+			"organizer": "City Cultural Department",
+			"city": "Krakow",
+			"meetupLocation": "Planty Park",
+			"category": "other"
+		},
+		{
+			"id": 3,
+			"title": "Startup Networking Breakfast",
+			"description": "Connect with fellow entrepreneurs over coffee and pastries. Pitch your ideas and find collaborators.",
+			"date": "2024-07-12T08:00:00",
+			"organizer": "Startup Hub",
+			"city": "Wroclaw",
+			"meetupLocation": "Business Garden",
+			"category": "business"
+		},
+		{
+			"id": 4,
+			"title": "Lead Accounts Representative",
+			"description": "Doloremque similique iusto aperiam dicta minima ex.",
+			"date": "2025-03-18T20:46:34.000Z",
+			"organizer": "Lydia_DAmore",
+			"city": "Burlington",
+			"meetupLocation": "2024-09-12 09:27:34",
+			"category": "marketing"
+		}
+	]
+}

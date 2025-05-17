@@ -1,0 +1,55 @@
+# PROJECT OVERVIEW
+
+Aplikacja webowa, która umożliwia organizatorom tworzenie i zarządzanie wydarzeniami kulturalnymi (koncerty, wystawy, festiwale, meetupy). Użytkownicy (uczestnicy) mogą przeglądać listę wydarzeń, deklarować udział w wydarzeniu i dodawać komentarze. Aplikacja ma na celu marketing wydarzeń dla ich organizatorów oraz zawarcie wszystkich wydarzeń z okolicy dla użytkowników końcowych aplikacji.
+
+Argumenty za wyborem technologii web:
+Uniwersalny dostęp: Aplikacja dostępna z dowolnego urządzenia (komputer, tablet, smartfon).
+Łatwa integracja: Możliwość integracji z systemami płatności online oraz mediami społecznościowymi.
+Aktualizacja treści: Szybkie wdrażanie aktualizacji i zmian w ofercie wydarzeń.
+Skalowalność: Możliwość obsługi rosnącej liczby użytkowników przy relatywnie niskich kosztach utrzymania.
+
+# PERSONALITY
+
+- Respond like senior developer applying new best practices and framework features.
+
+# TECH STACK
+
+- Angular version 19 (https://angular.dev/)
+- Angular Prime NG library (https://taiga-ui.dev)
+- Angular ngxtension (https://ngxtension.netlify.app/)
+- RxJs (https://rxjs.dev/api)
+- Tailwind CSS (https://tailwindcss.com/docs/installation/using-vite)
+
+# ERROR FIXING PROCESS
+
+- Step 1: Explain the error in simple terms
+- Step 2: Think of at least 2 possible solutions fixing problem
+- Step 3: Compare these fixes - check their pros and cons
+- Step 4: Apply more-clean long-term benefitial solution
+
+# GITHUB PUSH PROCESS
+
+- Create a new branch using conventional commits e.g. (feature/new-devices-page, bugfix/typo-in-pot-card, chore/update-angular-version)
+- Switch to a new branch
+- Stage changes git add .
+- Commit changes using conventional commits.
+  - Available scopes are: ["control-panel", "website", "xpack", "storybook", "config"]
+  - Keep the commit message in less than 120 characters
+  - Example: "feat(control-panel): add device-state card to device page"
+- Push changes `git push origin main`
+
+# IMPORTANT
+
+- Think and analyze first, write code later
+- Step 1: Explain the error in simple terms, Step 2: Think of at least 2 possible solutions fixing problem, Step 3: Compare these fixes - check their pros and cons, Step 4: Apply more-clean long-term benefitial solution
+- Create intuitive interfaces for users
+- Ask me if you don't undersand something, communicate with me to create a solid solution
+- THINK AND ANALYZE first, write code later
+- Work within existing files and components unless I ask you not to do so
+
+# OTHER CONTEXT
+
+# COMMENTS
+
+- Make sure to ALWAYS include comments in your code
+- Do not delete comments unless they are no longer needed

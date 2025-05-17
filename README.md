@@ -2,6 +2,9 @@
 
 Aplikacja webowa, która umożliwia organizatorom tworzenie i zarządzanie wydarzeniami kulturalnymi (koncerty, wystawy, festiwale, meetupy). Użytkownicy (uczestnicy) mogą przeglądać listę wydarzeń, deklarować udział w wydarzeniu i dodawać komentarze. Aplikacja ma na celu marketing wydarzeń dla ich organizatorów oraz zawarcie wszystkich wydarzeń z okolicy dla użytkowników końcowych aplikacji.
 
+- Frontend: https://github.com/MintMissy/MeetMeAt
+- Backend: https://github.com/MintMissy/MeetMeAt-API
+
 ## TECH STACK
 
 - Angular wersja 19 (https://angular.dev/)
